@@ -41,9 +41,13 @@
   font-size: 3rem;
 }
 
-.macbook {
+.macbook,
+.calendar,
+.game,
+.icon {
   font-size: 50px;
   color: #ffffff;
+  padding: 0 1rem 0 0;
 }
 
 .headerLine {
@@ -69,11 +73,18 @@
   font-size: 1.5rem;
 }
 #container {
-  padding: 3rem 3rem 0 3rem;
+  padding: 5rem 3rem 0 3rem;
 }
-.portfolioTitle {
-  font-size: 2.5rem;
+.portfolioTitle1,
+.portfolioTitle2 {
+  font-size: 1.5rem;
+  display: flex;
+  padding: 1rem;
 }
-.portfolio {
-  padding: 0 0 0 5rem;
+.portfolio1,
+.portfolio2 {
+  padding-left: 5rem;
+}
+.introImg {
+  display: flex;
 }
