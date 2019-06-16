@@ -1,1 +1,74 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>portfolio</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <link href="https://rawgithub.com/jasonm23/markdown-css-themes/gh-pages/markdown7.css" rel="stylesheet"></link> -->
+  </head>
+  <body>
+    <div class="header">
+      <div class="headerLine">
+        <a href="https://kanakuro.github.io/" target="_blank">
+          <img src="macbook.png" width="42px" height="42px" class="macbook" />
+        </a>
+        <div class="logo">portfolio</div>
+      </div>
+    </div>
+
+    <div id="container"></div>
+    <div class="portfolio">
+      <a href="https://kanakuro.github.io/portal" target="_blank">
+        <div class="link">
+          スケジュール、写真管理アプリ
+        </div>
+      </a>
+      <div class="discription">・言語：JavaScript</div>
+      <div class="discription">
+        ・概要：カレンダー表示、スケジュール登録、天気予報API、画像表示、ローカルストレージ保存
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+    <script>
+      var markdown = function() {
+        /*
+
+# self introduction
+
+2018.08〜エンジニアとして就業開始
+
+- Twitter   
+ ID：kanakuro9
+- GitHub  
+ ID：kanakuro https://github.com/kanakuro
+
+# career
+
+- 学生時代
+  - 農業資源経済学専攻で修士課程修了
+  - 在学中、ドイツに半年間交換留学
+- 人事経験
+  - 新卒で入社した企業で、採用担当に配属
+  - 結婚のため退職後、広く人事として活躍したく、労務知識を身に着けるために、社労士試験までの期間、社労士法人にて勤務しながら資格学校に通い、社労士資格取得を目指す
+  - 試験受験後、人事職への復帰を志し、メーカーにて人事職に就業
+- エンジニア経験
+  - 採用担当として SE について学んでいくうちに、プログラミングに面白さを感じて独学開始
+  - 独学だけでは物足りず、エンジニアに転身
+  - 様々な業務に携わるため、派遣会社に入社
+  - ５ヶ月間受託業務で複数案件に従事。その後客先常駐し 5 ヶ月目で現在に至る
+- スキル
+  - 言語：JavaScript, TypeScript, Swift, VBA, SQL
+  - その他：GitHub, filemaker
+
+# product
+
+*/
+      }
+        .toString()
+        .match(/\/\*([^]*)\*\//)[1];
+      var md = marked(markdown);
+      $("#container").append(md);
+    </script>
+  </body>
+</html>

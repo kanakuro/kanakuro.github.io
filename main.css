@@ -1,0 +1,79 @@
+.top {
+  position: absolute;
+  top: 3em;
+  left: 0;
+  background-color: rgb(71, 71, 71);
+  color: #ffffff;
+  width: 100%;
+  height: 200%;
+  padding: 1rem;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.8em;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(209, 212, 211);
+  padding: 0.5em;
+}
+.menu {
+  padding-right: 0.25em;
+  z-index: 3;
+}
+.logo {
+  padding-left: 0.25em;
+  z-index: 3;
+  position: absolute;
+  top: 0.25em;
+  left: 2.5em;
+}
+
+#container {
+  top: 3rem;
+}
+
+.title {
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.macbook {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.headerLine {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menuListOpen {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 30px;
+  width: 30px;
+  border: none;
+  outline: none;
+}
+.menuListOpen:hover {
+  cursor: pointer;
+}
+.menuListClose {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 10px;
+}
+.logo {
+  font-size: 1.5rem;
+}
+#container {
+  padding: 3rem 3rem 0 3rem;
+}
+.portfolioTitle {
+  font-size: 2.5rem;
+}
+.portfolio {
+  padding: 0 0 0 5rem;
+}
